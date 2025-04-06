@@ -17,5 +17,8 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
-  base: "/figma/"
+  base: "/figma/",
+  build: {
+    outDir: "docs"
+  }
 })
